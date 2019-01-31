@@ -23,6 +23,7 @@ export GOPATH=~/Projects/go
 export PATH=$PATH:$GOPATH/bin
 alias t='todo.sh -d ~/Documents/todo/todo.cfg'
 alias shuf=gshuf
+alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
 
 # script sourced from Jess Frazelle to cleanup docker images
 dcleanup(){
