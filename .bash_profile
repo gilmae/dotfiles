@@ -23,7 +23,7 @@ export GIT_PS1_SHOWUNTRACKEDFILES=true
 # And then set up the prompt
 #export PS1="[\\h:\\w ${GREEN}\$(git branch-name 2> /dev/null)${NC}]\\n$ "
 #export PS1="[\\h:\\w ${GREEN}\$(__git_ps1)${NC}\\n$ "
-export PS1="\[\`if [[ \$? = "0" ]]; then echo '\e[32m\h\e[0m'; else echo '\e[31m\h\e[0m' ; fi\`:\\w ${GREEN}\$(__git_ps1)${NC}\\n$ "
+export PS1="\[\`if [[ \$? = "0" ]]; then echo '\e[32m\h\e[0m'; else echo '\e[31m\h\e[0m' ; fi\`:\\w ${BLUE}\$(__git_ps1)${NC}\\n$ "
 
 export GOPATH=~/Projects/go
 export PATH=$PATH:$GOPATH/bin
