@@ -1,3 +1,10 @@
+if [ -f /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash ]; then
+    . /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash
+fi
+
+source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
+
+
 # Use the \[ escape to begin a sequence of non-printing characters,
 # and the \] escape to signal the end of such a sequence.
 # Define some colors first: ( nicked from https://gist.github.com/hernamesbarbara/1937937)
