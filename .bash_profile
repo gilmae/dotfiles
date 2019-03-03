@@ -34,6 +34,7 @@ export PS1="\[\`if [[ \$? = "0" ]]; then echo '\e[32m\h\e[0m'; else echo '\e[31m
 
 export GOPATH=~/Projects/go
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:~/bin
 
 # Generic aliases based on (almost) bog standard tools
 alias reload='source ~/.bash_profile && source ~/.bashrc'
@@ -46,6 +47,8 @@ alias ping='ping -c 5'
 alias ipe='curl ipinfo.io/ip'
 alias ipi='ipconfig getifaddr en0'
 alias c='clear'
+alias weather='curl -4 http://wttr.in/Sydney'
+alias moon='curl -4 http://wttr.in/Moon'
 
 # Some specific tools
 alias t='todo.sh -d ~/Documents/todo/todo.cfg'
