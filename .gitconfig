@@ -78,7 +78,7 @@
     # Speed up commands involving untracked files such as `git status`.
     # https://git-scm.com/docs/git-update-index#_untracked_cache
     untrackedCache = true
-	editor = 'C:/Program Files/Notepad++/notepad++.exe'
+	editor = $EDITOR
 
 [color]
 	branch = auto
@@ -101,7 +101,7 @@
 [merge]
     # Include summaries of merged commits in newly created merge commit messages
     log = true
-	tool = kdiff3
+	tool = $DIFFTOOL
 
 # URL shorthands
 [url "git@github.com:"]
@@ -126,7 +126,7 @@
 	process = git-lfs filter-process
 	required = true
 [mergetool "kdiff3"]
-	path = C:/Program Files/KDiff3/kdiff3.exe
+	path = $DIFFTOOL
 	trustExitCode = false
 [diff]
 	guitool = kdiff3
